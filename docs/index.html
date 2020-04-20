@@ -48,7 +48,7 @@
 That's Maps with a big &quot;M&quot;, not <code>array.map</code> or &quot;directions to the nearest Thai place&quot; kind of map.</p>
 <p>Specifically, Big-M enables composing Maps, decomposing them, recomposing them, and chaining operations without having to loop over the data structure more than once.
 It also includes some Map sub-classes for special use cases: EventualMap, BiMap, and CanonizedMap.</p>
-<p>Complete docs available at <a href="https:%5C/%5C/mattiasmartens.github.io/big-m/">https://mattiasmartens.github.io/big-m/</a></p>
+<p>Complete docs available at <a href="https://mattiasmartens.github.io/big-m/">https://mattiasmartens.github.io/big-m/</a></p>
 <h1>maps.ts</h1>
 <p>Pure function library.
 Most functions in this library can be used not only on Maps, but on anything that implements the Iterable interface.
@@ -145,7 +145,7 @@ indexable(
 <p>But it only looks two levels deep into deeply nested objects.
 However, users can have complete control over how the canonizer works using the canonizer argument, allowing them to adapt the class to their own particular use case.</p>
 <h1>Chaining</h1>
-<p>Chaining operations together can be done readably with <a href="https:%5C/%5C/github.com/gcanti/fp-ts">https://github.com/gcanti/fp-ts</a>'s pipe function:</p>
+<p>Chaining operations together can be done readably with <a href="https://github.com/gcanti/fp-ts">https://github.com/gcanti/fp-ts</a>'s pipe function:</p>
 <pre class="prettyprint source"><code>pipe(
   makeEntries(fibonacci, fib => [fib, romanNumerals(fib)]),
   x => selectMap(x, fib => fib % 2 === 1),
@@ -155,7 +155,7 @@ However, users can have complete control over how the canonizer works using the 
 </code></pre>
 <p>It would be nicer to call functions directly on their first argument, i.e. <code>map1.mapValues()</code>, but this is not implemented yet - see the Contributing section below.</p>
 <h2><a href="https://github.com/MattiasMartens/big-m">Contributing</a></h2>
-<p>Source code is hosted at <a href="https:%5C/%5C/github.com/MattiasMartens/big-m">https://github.com/MattiasMartens/big-m</a>.</p>
+<p>Source code is hosted at <a href="https://github.com/MattiasMartens/big-m">https://github.com/MattiasMartens/big-m</a>.</p>
 <p>To set up locally (assuming you have Yarn installed and you've forked the repo):</p>
 <pre class="prettyprint source"><code>yarn install
 
